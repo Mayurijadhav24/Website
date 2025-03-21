@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bookingform.css">
+    <title>bookingform</title>
+</head>
+<body>
+    
+    <div class="container">
+    <h1>Book an Event</h1>
+    <form action="booking.php" method="POST">
+    
+    <label for="client name">Userame:</label>
+    <input type="text" id="userame" name="username" required>
+                            
+    <label for="eventName">Event Name:</label>
+    <input type="text" id="event_name" name="event_name" required>
+                            
+    <label for="date">Event Date:</label>
+    <input type="date" id="event_date" name="event_date" required>
+    
+    <label for="date">Event Time:</label>
+    <input type="time" id="event_time" name="event_time" required>
+
+    <label for="location">Event Location:</label>
+    <input type="text" id="event_location" name="event_location" required>
+                            
+    <label for="description">Describe what you are expecting for this Event</label>
+    <input type="text" id="describe_event" name="describe_event" required>
+                            
+        <button class="sbmt" type="submit">Book Now</button>
+    </form>
+    </div>
+</div>
+<!--                             
+<script>
+
+    document.getElementById('bookingForm').addEventListener('submit', function (event) {event.preventDefault();alert('Booking submitted successfully!');});
+</script> -->
+    
+</body>
+</html>
